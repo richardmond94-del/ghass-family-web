@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GHASS Family - Groupe d'Harmonisation Socio-Spirituelle</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: {
+              300: '#FDE047',
+              400: '#FACC15',
+              500: '#EAB308',
+              600: '#CA8A04',
+              700: '#A16207',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-black text-white font-sans antialiased selection:bg-gold-500 selection:text-black">
+
+  <!-- NAVBAR -->
+  <nav class="sticky top-0 z-50 bg-black/95 backdrop-blur-md border-b border-gold-600/30 px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center space-x-3">
+      <img src="logo_ghass.png" alt="GHASS Logo" class="h-12 w-auto object-contain">
+      <div>
+        <span class="text-xl font-bold tracking-wider text-gold-400">GHASS FAMILY</span>
+        <p class="text-[10px] text-gray-400 hidden sm:block">Groupe d'Harmonisation Socio-Spirituelle</p>
+      </div>
+    </div>
+
+    <div class="hidden lg:flex space-x-6 text-sm font-medium tracking-wide">
+      <a href="#inicio" class="hover:text-gold-400 transition">Inicio</a>
+      <a href="#mision" class="hover:text-gold-400 transition">Misión & Visión</a>
+      <a href="#valores" class="hover:text-gold-400 transition">Valores</a>
+      <a href="#musica" class="hover:text-gold-400 transition">Música</a>
+      <a href="#calendario" class="hover:text-gold-400 transition">Calendario 2026</a>
+      <a href="#unirse" class="hover:text-gold-400 transition">Postular</a>
+    </div>
+
+    <div class="flex items-center gap-3">
+      <a href="#invitaciones" class="bg-gradient-to-r from-gold-600 to-gold-400 text-black font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-full hover:brightness-110 shadow-lg shadow-gold-500/20 transition">
+        Invítanos a tu Iglesia
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header id="inicio" class="relative min-h-[85vh] flex items-center justify-center text-center px-4 overflow-hidden bg-radial from-neutral-900 to-black">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(202,138,4,0.18)_0%,transparent_70%)]"></div>
+    <div class="relative z-10 max-w-3xl mx-auto">
+      <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-gold-500/40 text-gold-400 text-xs tracking-widest uppercase mb-6 bg-black/60">
+        <i class="fa-solid fa-dove"></i> Ministère Musical & Évangélique
+      </span>
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-4">
+        Accorder les voix <br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-gold-500 to-gold-600">pour toucher les âmes</span>
+      </h1>
+      <p class="text-gray-300 text-sm sm:text-base mb-8 leading-relaxed max-w-2xl mx-auto">
+        Ministère engagé dans l’évangélisation par le chant, portant un message d’espoir, de paix et de restauration auprès des communautés en Église EBCH de La Calera, Valparaíso et partout au Chili.
+      </p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a href="#musica" class="bg-gold-500 hover:bg-gold-400 text-black font-bold px-7 py-3 rounded-full transition shadow-md text-sm">
+          <i class="fa-solid fa-play mr-2"></i> Écouter nos Louanges
+        </a>
+        <a href="#invitaciones" class="border border-gold-500/60 hover:bg-gold-500/10 text-gold-300 px-7 py-3 rounded-full transition text-sm">
+          <i class="fa-regular fa-envelope mr-2"></i> Inviter le Groupe
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MISIÓN & VISIÓN -->
+  <section id="mision" class="py-20 px-6 max-w-6xl mx-auto border-t border-gold-600/20">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div class="bg-neutral-900/80 border border-gold-500/30 p-8 rounded-3xl">
+        <div class="w-12 h-12 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-xl mb-4">
+          <i class="fa-solid fa-cross"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-3">Notre Mission</h3>
+        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+          Évangéliser à travers une louange d'excellence tout en étant un moteur de changement social:
+        </p>
+        <ul class="text-xs text-gray-400 space-y-2">
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-gold-400 mt-0.5"></i> Utiliser l'harmonie vocale comme outil de restauration spirituelle.</li>
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-gold-400 mt-0.5"></i> Porter un message d'espoir chrétien dans les espaces publics et ecclésiaux.</li>
+          <li class="flex items-start gap-2"><i class="fa-solid fa-check text-gold-400 mt-0.5"></i> Traduire la foi en actes par des initiatives de solidarité communautaire.</li>
+        </ul>
+      </div>
+
+      <div class="bg-neutral-900/80 border border-gold-500/30 p-8 rounded-3xl">
+        <div class="w-12 h-12 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-xl mb-4">
+          <i class="fa-solid fa-eye"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-3">Notre Vision</h3>
+        <p class="text-gray-300 text-sm leading-relaxed">
+          Devenir le ministère musical de référence où l'harmonie des voix reflète l'unité des cœurs, inspirant une génération de croyants à vivre une foi équilibrée entre profondeur spirituelle et responsabilité sociale.
+        </p>
+        <div class="mt-6 pt-6 border-t border-neutral-800 flex items-center justify-between text-xs text-gray-400">
+          <span>Fondation : <strong>10 Janvier 2026</strong></span>
+          <span>Direction : <strong>Maestro Richard</strong></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALORES NO NEGOCIABLES -->
+  <section id="valores" class="py-16 px-6 bg-neutral-950 border-t border-neutral-800">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="text-gold-400 text-xs uppercase tracking-widest font-semibold">Principes Fondamentaux</span>
+        <h2 class="text-3xl font-bold text-white mt-1">Nos Valeurs Non Négociables</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        <div class="bg-neutral-900 p-5 rounded-2xl border border-neutral-800 hover:border-gold-500/40 transition">
+          <h4 class="text-gold-400 font-bold mb-1">Excellence</h4>
+          <p class="text-gray-400 text-xs">Offrir le meilleur à Dieu sur le plan technique et spirituel.</p>
+        </div>
+        <div class="bg-neutral-900 p-5 rounded-2xl border border-neutral-800 hover:border-gold-500/40 transition">
+          <h4 class="text-gold-400 font-bold mb-1">Intégrité</h4>
+          <p class="text-gray-400 text-xs">Vivre en accord parfait avec le message chanté.</p>
+        </div>
+        <div class="bg-neutral-900 p-5 rounded-2xl border border-neutral-800 hover:border-gold-500/40 transition">
+          <h4 class="text-gold-400 font-bold mb-1">Unité</h4>
+          <p class="text-gray-400 text-xs">Préserver la fraternité et la paix comme témoignage du Christ.</p>
+        </div>
+        <div class="bg-neutral-900 p-5 rounded-2xl border border-neutral-800 hover:border-gold-500/40 transition">
+          <h4 class="text-gold-400 font-bold mb-1">Discipline</h4>
+          <p class="text-gray-400 text-xs">Respect des horaires, des répétitions et rigueur ministérielle.</p>
+        </div>
+        <div class="bg-neutral-900 p-5 rounded-2xl border border-neutral-800 hover:border-gold-500/40 transition">
+          <h4 class="text-gold-400 font-bold mb-1">Servitude</h4>
+          <p class="text-gray-400 text-xs">Cœur humble et disposé à soutenir ceux dans le besoin.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MÚSICA & STREAMING -->
+  <section id="musica" class="py-20 px-6 max-w-6xl mx-auto border-t border-gold-600/20">
+    <div class="text-center mb-14">
+      <h2 class="text-3xl font-bold text-gold-400 mb-2">Música & Producciones</h2>
+      <p class="text-gray-400 text-sm">Disfruta de nuestras alabanzas en plataformas digitales</p>
+    </div>
+
+    <div class="flex justify-center gap-4 mb-10 flex-wrap">
+      <a href="https://youtube.com" target="_blank" class="flex items-center gap-2 bg-red-600/10 border border-red-500/30 text-red-400 px-5 py-2.5 rounded-xl hover:bg-red-600/20 transition text-sm">
+        <i class="fa-brands fa-youtube text-lg"></i> YouTube
+      </a>
+      <a href="https://spotify.com" target="_blank" class="flex items-center gap-2 bg-emerald-600/10 border border-emerald-500/30 text-emerald-400 px-5 py-2.5 rounded-xl hover:bg-emerald-600/20 transition text-sm">
+        <i class="fa-brands fa-spotify text-lg"></i> Spotify
+      </a>
+      <a href="https://tiktok.com" target="_blank" class="flex items-center gap-2 bg-neutral-800 border border-neutral-700 text-white px-5 py-2.5 rounded-xl hover:bg-neutral-700 transition text-sm">
+        <i class="fa-brands fa-tiktok text-lg"></i> TikTok
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-neutral-900 border border-gold-500/20 rounded-2xl p-4 hover:border-gold-500/50 transition">
+        <div class="aspect-video bg-neutral-800 rounded-xl mb-4 overflow-hidden flex items-center justify-center text-gold-500">
+          <i class="fa-brands fa-youtube text-4xl"></i>
+        </div>
+        <h3 class="font-bold text-base text-white mb-1">Adoration & Louange en Direct</h3>
+        <p class="text-gray-400 text-xs">Arreglo vocal coral a 4 voces.</p>
+      </div>
+
+      <div class="bg-neutral-900 border border-gold-500/20 rounded-2xl p-4 hover:border-gold-500/50 transition">
+        <div class="aspect-video bg-neutral-800 rounded-xl mb-4 overflow-hidden flex items-center justify-center text-emerald-400">
+          <i class="fa-brands fa-spotify text-4xl"></i>
+        </div>
+        <h3 class="font-bold text-base text-white mb-1">Single Gospel Officiel</h3>
+        <p class="text-gray-400 text-xs">Production studio GHASS Family.</p>
+      </div>
+
+      <div class="bg-neutral-900 border border-gold-500/20 rounded-2xl p-4 hover:border-gold-500/50 transition">
+        <div class="aspect-video bg-neutral-800 rounded-xl mb-4 overflow-hidden flex items-center justify-center text-gold-400">
+          <i class="fa-solid fa-microphone-lines text-4xl"></i>
+        </div>
+        <h3 class="font-bold text-base text-white mb-1">Session Acoustique</h3>
+        <p class="text-gray-400 text-xs">Harmonies et louange acoustique.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALENDARIO DE ACTIVIDADES 2026 -->
+  <section id="calendario" class="py-20 px-6 max-w-5xl mx-auto border-t border-gold-600/20">
+    <div class="text-center mb-12">
+      <span class="text-gold-400 text-xs uppercase tracking-widest font-semibold">Agenda Officiel</span>
+      <h2 class="text-3xl font-bold text-white mt-1 mb-2">Calendrier des Activités 2026 (Chili)</h2>
+      <p class="text-gray-400 text-xs">Sorties, retraites spirituelles et programmes ministériels</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="bg-neutral-900/90 border border-gold-500/20 p-4 rounded-xl flex items-center justify-between">
+        <div>
+          <span class="text-gold-400 text-xs font-bold block">10 Janvier 2026</span>
+          <h4 class="font-bold text-sm text-white">Anniversaire & Fondation GHASS</h4>
+          <p class="text-gray-400 text-xs">Célébration et action de grâce</p>
+        </div>
+        <span class="px-3 py-1 bg-gold-500/10 text-gold-400 rounded-full text-[10px] font-semibold border border-gold-500/30">Célébré</span>
+      </div>
+
+      <div class="bg-neutral-900/90 border border-gold-500/20 p-4 rounded-xl flex items-center justify-between">
+        <div>
+          <span class="text-gold-400 text-xs font-bold block">1er Mai 2026</span>
+          <h4 class="font-bold text-sm text-white">Sortie de Détente</h4>
+          <p class="text-gray-400 text-xs">Communion fraternelle & pique-nique</p>
+        </div>
+        <span class="px-3 py-1 bg-neutral-800 text-gray-300 rounded-full text-[10px]">Fraternité</span>
+      </div>
+
+      <div class="bg-neutral-900/90 border border-gold-500/20 p-4 rounded-xl flex items-center justify-between">
+        <div>
+          <span class="text-gold-400 text-xs font-bold block">15 Août 2026</span>
+          <h4 class="font-bold text-sm text-white">Retraite Spirituelle</h4>
+          <p class="text-gray-400 text-xs">Journée entière de prière et de jeûne</p>
+        </div>
+        <span class="px-3 py-1 bg-neutral-800 text-gray-300 rounded-full text-[10px]">Prière</span>
+      </div>
+
+      <div class="bg-neutral-900/90 border border-gold-500/20 p-4 rounded-xl flex items-center justify-between">
+        <div>
+          <span class="text-gold-400 text-xs font-bold block">12 Octobre 2026</span>
+          <h4 class="font-bold text-sm text-white">Atelier Musical & Technique</h4>
+          <p class="text-gray-400 text-xs">Formation technique pour chant et musiciens</p>
+        </div>
+        <span class="px-3 py-1 bg-neutral-800 text-gray-300 rounded-full text-[10px]">Formation</span>
+      </div>
+
+      <div class="bg-neutral-900/90 border border-gold-500/20 p-4 rounded-xl flex items-center justify-between">
+        <div>
+          <span class="text-gold-400 text-xs font-bold block">22 Novembre 2026</span>
+          <h4 class="font-bold text-sm text-white">Sortie Église & Ministère</h4>
+          <p class="text-gray-400 text-xs">Programme spécial d'adoration</p>
+        </div>
+        <span class="px-3 py-1 bg-gold-500/10 text-gold-400 rounded-full text-[10px]">Sortie</span>
+      </div>
+
+      <div class="bg-neutral-900/90 border border-gold-500/20 p-4 rounded-xl flex items-center justify-between">
+        <div>
+          <span class="text-gold-400 text-xs font-bold block">20 Décembre 2026</span>
+          <h4 class="font-bold text-sm text-white">Concert de Clôture Annuelle</h4>
+          <p class="text-gray-400 text-xs">Célébration de fin d'année et louange</p>
+        </div>
+        <span class="px-3 py-1 bg-gold-500/10 text-gold-400 rounded-full text-[10px]">Spécial</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIOS: INVITACIONES & ADHESIÓN -->
+  <section class="py-20 px-6 bg-neutral-950 border-t border-neutral-800">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+      <!-- Formulario 1: Invitaciones -->
+      <div id="invitaciones" class="bg-neutral-900 border border-gold-500/30 p-8 rounded-3xl">
+        <h3 class="text-xl font-bold text-gold-400 mb-1">Inviter GHASS à Votre Assemblée</h3>
+        <p class="text-gray-400 text-xs mb-6">Demande de prestation musicale et évangélique (Cultes, concerts, retraites).</p>
+        
+        <form class="space-y-4">
+          <div>
+            <label class="block text-xs font-medium text-gray-300 mb-1">Nom de l'Église / Pasteur</label>
+            <input type="text" id="inv_eglise" required class="w-full bg-black border border-neutral-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-gold-500" placeholder="Ex: Église Baptiste...">
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs font-medium text-gray-300 mb-1">Téléphone / WhatsApp</label>
+              <input type="tel" id="inv_tel" required class="w-full bg-black border border-neutral-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-gold-500" placeholder="+56 9...">
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-gray-300 mb-1">Ville / Région</label>
+              <input type="text" id="inv_ville" class="w-full bg-black border border-neutral-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-gold-500" placeholder="Ex: La Calera, Quillota...">
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-gray-300 mb-1">Détails de l'Événement & Date</label>
+            <textarea id="inv_details" rows="3" class="w-full bg-black border border-neutral-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-gold-500" placeholder="Thème, date et horaires souhaités..."></textarea>
+          </div>
+          <button type="button" onclick="envoyerInvitationWA()" class="w-full bg-gold-500 hover:bg-gold-400 text-black font-bold py-2.5 rounded-lg text-sm transition">
+            Envoyer l'Invitation par WhatsApp
+          </button>
+        </form>
+      </div>
+
+      <!-- Formulario 2: Adhesión -->
+      <div id="unirse" class="bg-neutral-900 border border-neutral-800 p-8 rounded-3xl">
+        <h3 class="text-xl font-bold text-white mb-1">Formulaire d'Adhésion</h3>
+        <p class="text-gray-400 text-xs mb-6">Demande d'intégration au ministère musical GHASS (Choristes & Musiciens).</p>
+        
+        <form class="space-y-4">
+          <div>
+            <label class="block text-xs font-medium text-gray-300 mb-1">Nom et Prénom</label>
+            <input type="text" id="adh_nom" required class="w-full bg-black border border-neutral-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-gold-500" placeholder="Votre nom complet">
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs font-medium text-gray-300 mb-1">Pupitre / Instrument</label>
+              <select id="adh_role" class="w-full bg-black border border-neutral-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-gold-500">
+                <option value="Soprano">Soprano</option>
+                <option value="Alto">Alto</option>
+                <option value="Ténor">Ténor</option>
+                <option value="Basse">Basse</option>
+                <option value="Musicien / Instrumentiste">Musicien / Instrumentiste</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-gray-300 mb-1">Téléphone / WhatsApp</label>
+              <input type="tel" id="adh_tel" required class="w-full bg-black border border-neutral-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-gold-500" placeholder="+56 9...">
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-gray-300 mb-1">Église Locale Actuelle & Expérience</label>
+            <textarea id="adh_exp" rows="3" class="w-full bg-black border border-neutral-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-gold-500" placeholder="Précisez votre église locale et votre parcours musical..."></textarea>
+          </div>
+          <button type="button" onclick="envoyerAdhesionWA()" class="w-full bg-emerald-500 hover:bg-emerald-400 text-black font-bold py-2.5 rounded-lg text-sm transition">
+            Soumettre ma Candidature
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-10 text-center text-xs text-gray-500 border-t border-neutral-800 bg-black">
+    <div class="flex justify-center space-x-6 mb-4 text-base text-gold-400">
+      <a href="#" class="hover:text-white transition"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#" class="hover:text-white transition"><i class="fa-brands fa-spotify"></i></a>
+      <a href="#" class="hover:text-white transition"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="#" class="hover:text-white transition"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    <p>© 2026 GHASS FAMILY (Groupe d'Harmonisation Socio-Spirituelle). EBCH La Calera, Chili.</p>
+  </footer>
+
+  <!-- SCRIPT WHATSAPP AUTOMATION -->
+  <script>
+    const NUMERO_GHASS = "56900000000"; // Reemplaza por tu número WhatsApp de Chile
+
+    function envoyerInvitationWA() {
+      const eglise = document.getElementById('inv_eglise').value;
+      const tel = document.getElementById('inv_tel').value;
+      const ville = document.getElementById('inv_ville').value;
+      const details = document.getElementById('inv_details').value;
+
+      if (!eglise || !tel) {
+        alert("Veuillez remplir les champs obligatoires.");
+        return;
+      }
+
+      const msg = `*DEMANDE D'INVITATION - GHASS*%0A%0A` +
+                  `*Église / Responsable:* ${encodeURIComponent(eglise)}%0A` +
+                  `*Téléphone:* ${encodeURIComponent(tel)}%0A` +
+                  `*Ville / Région:* ${encodeURIComponent(ville)}%0A` +
+                  `*Détails de l'événement:* ${encodeURIComponent(details)}`;
+
+      window.open(`https://wa.me/${NUMERO_GHASS}?text=${msg}`, '_blank');
+    }
+
+    function envoyerAdhesionWA() {
+      const nom = document.getElementById('adh_nom').value;
+      const role = document.getElementById('adh_role').value;
+      const tel = document.getElementById('adh_tel').value;
+      const exp = document.getElementById('adh_exp').value;
+
+      if (!nom || !tel) {
+        alert("Veuillez renseigner votre nom et votre contact.");
+        return;
+      }
+
+      const msg = `*FORMULAIRE D'ADHÉSION - GHASS*%0A%0A` +
+                  `*Nom & Prénom:* ${encodeURIComponent(nom)}%0A` +
+                  `*Rôle / Pupitre:* ${encodeURIComponent(role)}%0A` +
+                  `*Contact:* ${encodeURIComponent(tel)}%0A` +
+                  `*Parcours / Église:* ${encodeURIComponent(exp)}`;
+
+      window.open(`https://wa.me/${NUMERO_GHASS}?text=${msg}`, '_blank');
+    }
+  </script>
+
+</body>
+</html>

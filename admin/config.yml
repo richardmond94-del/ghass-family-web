@@ -1,0 +1,54 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "configuracion_general"
+    label: "Configuración y Contacto"
+    files:
+      - file: "data/config.json"
+        label: "Datos Principales del Sitio"
+        name: "config"
+        fields:
+          - { label: "Slogan Principal", name: "slogan", widget: "string", default: "Accorder les voix pour toucher les âmes" }
+          - { label: "Descripción / Misión", name: "descripcion", widget: "text" }
+          - { label: "Número de WhatsApp (Chile)", name: "whatsapp", widget: "string", default: "569XXXXXXXX" }
+          - { label: "Correo Electrónico", name: "email", widget: "string" }
+          - { label: "Imagen de Fondo Principal (Hero)", name: "fondo_hero", widget: "image", required: false }
+          - { label: "Enlace Canal YouTube", name: "youtube_link", widget: "string" }
+          - { label: "Enlace Perfil Spotify", name: "spotify_link", widget: "string" }
+
+  - name: "eventos"
+    label: "Próximos Eventos y Conciertos"
+    folder: "data/eventos"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Título del Evento", name: "title", widget: "string" }
+      - { label: "Fecha del Evento", name: "fecha", widget: "datetime", format: "DD MMMM YYYY" }
+      - { label: "Ubicación / Iglesia", name: "lugar", widget: "string" }
+      - { label: "Hora", name: "hora", widget: "string" }
+      - { label: "Estado", name: "estado", widget: "select", options: ["Confirmado", "Próximamente", "Realizado"] }
+      - { label: "Detalles", name: "body", widget: "markdown" }
+
+  - name: "videos_musica"
+    label: "Música y Videos (YouTube/Spotify)"
+    folder: "data/musica"
+    create: true
+    fields:
+      - { label: "Título de la Canción / Alabanza", name: "title", widget: "string" }
+      - { label: "Tipo", name: "tipo", widget: "select", options: ["Video YouTube", "Canción Spotify", "Grabación Acústica"] }
+      - { label: "Enlace / ID del Video (Embed)", name: "url", widget: "string" }
+      - { label: "Descripción", name: "descripcion", widget: "string" }
+
+  - name: "galeria"
+    label: "Fotos de Ensayos y Salidas"
+    folder: "data/galeria"
+    create: true
+    fields:
+      - { label: "Título / Actividad", name: "title", widget: "string" }
+      - { label: "Foto", name: "imagen", widget: "image" }
+      - { label: "Descripción Corta", name: "descripcion", widget: "string" }
